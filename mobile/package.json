@@ -2,11 +2,14 @@
   "name": "mobile",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://Asim586433.github.io/Construction-App",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "predeploy": "npx expo export --platform web",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@expo/metro-runtime": "~55.0.6",
@@ -22,5 +25,8 @@
     "react-native-screens": "^4.24.0",
     "react-native-web": "^0.21.0"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }

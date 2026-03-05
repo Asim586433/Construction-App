@@ -6,7 +6,7 @@ import axios from 'axios';
 // For MVP demo, localhost works for web bundles, we will assume localhost.
 // (In a real mobile deployment, ensure to replace this with your computer's local IP)
 
-const API_BASE_URL = 'http://127.0.0.1:3000/api';
+const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://127.0.0.1:3000/api';
 
 export const apiClient = axios.create({
     baseURL: API_BASE_URL,

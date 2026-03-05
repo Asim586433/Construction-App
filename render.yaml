@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: construction-assistant-backend
+    env: node
+    buildCommand: yarn install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.16.0
